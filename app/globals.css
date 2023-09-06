@@ -2,13 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 2px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 10px;
+}
+
+.fixed.inset-0 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the dropdown content */
+.transform.scale-0 {
+  transform: scale(0);
+  transform-origin: top;
+  transition: transform 0.3s ease-in-out;
+}
+.display::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 10px;
+}
+.display::-webkit-scrollbar {
+  width: 1px;
+  height: 10px;
+}
+/* Hide the scrollbar track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-item {
+  margin: 0 -1000px;
+}
+.ReactCollapse--collapse {
+  transition: height 500ms;
+}
+.transition-transform {
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
+.transition-slide {
+  transition: transform 0.6s ease;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;

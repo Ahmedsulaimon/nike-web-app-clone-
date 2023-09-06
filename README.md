@@ -1,3 +1,7 @@
+This nike website clone was made on the 28th of july 2023
+
+<!-- --------------------------------------------------------------------------------------- -->
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
