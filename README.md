@@ -1,4 +1,4 @@
-This nike website clone was made on the 28th of july 2023
+This version of the nike website clone was made on the 28th of july 2023
 
 <!-- --------------------------------------------------------------------------------------- -->
 
