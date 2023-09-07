@@ -1,5 +1,5 @@
 import React from "react";
-import nikeStoreData from "@/app/Data/nikeStoreData.json";
+import { useFetchedData } from "@/app/hooks/useContext/API/Api";
 import Image from "next/image";
 import { formatCurrency } from "../utilities/formatCurrency";
 import { useShoppingCart } from "../../hooks/useContext/shoppingCartContext";
@@ -14,7 +14,7 @@ type CartItemProps = {
 function CartItem({ id, quantity, shoeSize }: CartItemProps) {
   const { selectedSize } = useSelectedSize();
   const { removeFromCart } = useShoppingCart();
-
+  const { nikeStoreData } = useFetchedData();
   const item = nikeStoreData.trends.find((i) => i.id === id);
 
   if (item == null) {

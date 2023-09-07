@@ -5,9 +5,10 @@ import { AiFillInstagram } from "react-icons/ai";
 import { IoLocationSharp } from "react-icons/io5";
 import { AiOutlineCopyrightCircle } from "react-icons/ai";
 import HoverDropupMenu from "./dropup";
-import nikeStoreData from "@/app/Data/nikeStoreData.json";
+import { useFetchedData } from "@/app/hooks/useContext/API/Api";
 
 export default function Desktop() {
+  const { nikeStoreData } = useFetchedData();
   return (
     // footer styling for desktop or tablet
     <div className=" lg:ml-64 lg:mr-56">

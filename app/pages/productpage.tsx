@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Image from "next/image";
-import nikeStoreData from "@/app/Data/nikeStoreData.json";
+import { useFetchedData } from "../hooks/useContext/API/Api";
 import classNames from "classnames";
 import ProductInfo from "../components/product/productinfo";
 import Trends from "../components/home/trends";
@@ -9,7 +9,7 @@ import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 
 function Productpage() {
   const [displayIndex, SetDisplayIndex] = useState(0);
-
+  const { nikeStoreData } = useFetchedData();
   const goToPreviousSlide = () => {
     SetDisplayIndex((prevIndex) =>
       prevIndex === 0 ? nikeStoreData.dunkLow.length - 1 : prevIndex - 1

@@ -82,7 +82,7 @@ const trends = [
     title: "Nike Air Force 1 '07",
     desc: "Men's Shoes",
     price: "69.95",
-    link: "/productpage",
+    link: "/",
   },
 
   {
@@ -91,7 +91,7 @@ const trends = [
     title: "Nike Dunk Low",
     desc: "Younger Kids'",
     price: "52.95",
-    link: "/productpage",
+    link: "/",
   },
 
   {
@@ -100,7 +100,7 @@ const trends = [
     title: "Nike Air Force 1'07 LV8",
     desc: "Men's Shoes",
     price: "119.95",
-    link: "/productpage",
+    link: "/",
   },
 
   {
@@ -109,7 +109,7 @@ const trends = [
     title: "Air Jordan 1 Low",
     desc: "Older Kids' Shoes",
     price: "69.95",
-    link: "/productpage",
+    link: "/",
   },
 
   {
@@ -118,7 +118,7 @@ const trends = [
     title: "Nike Air Force 1'07",
     desc: "Men's Shoes",
     price: "109.95",
-    link: "/productpage",
+    link: "/",
   },
 ];
 

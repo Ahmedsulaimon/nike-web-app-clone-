@@ -1,12 +1,12 @@
-import React from "react";
+import React, { use } from "react";
 import CartItem from "./CartItem";
 import { formatCurrency } from "../utilities/formatCurrency";
 import { useShoppingCart } from "../../hooks/useContext/shoppingCartContext";
-import nikeStoreData from "@/app/Data/nikeStoreData.json";
 
+import { useFetchedData } from "@/app/hooks/useContext/API/Api";
 function ShoppingCart() {
   const { cartItems } = useShoppingCart();
-
+  const { nikeStoreData } = useFetchedData();
   return (
     //displaying items in the cart
     <div>

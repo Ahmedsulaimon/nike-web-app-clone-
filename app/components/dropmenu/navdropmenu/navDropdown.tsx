@@ -1,7 +1,8 @@
 import { useState } from "react";
-import nikeStoreData from "@/app/Data/nikeStoreData.json";
+import { useFetchedData } from "@/app/hooks/useContext/API/Api";
 import NewFeatured from "./new&Featured";
 export default function Navdropdown() {
+  const { nikeStoreData } = useFetchedData();
   const [FeaturedMenu, setFeaturedMenu] = useState(false);
   const [MenMenu, setMenMenu] = useState(false);
   const [WomenMenu, setWomenMenu] = useState(false);

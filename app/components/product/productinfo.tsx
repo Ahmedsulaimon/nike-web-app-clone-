@@ -1,5 +1,5 @@
 import React from "react";
-import nikeStoreData from "@/app/Data/nikeStoreData.json";
+import { useFetchedData } from "@/app/hooks/useContext/API/Api";
 import { CiHeart } from "react-icons/ci";
 import { useState } from "react";
 import classNames from "classnames";
@@ -11,7 +11,7 @@ type StoreItemProps = {
 
 function ProductInfo({ id }: StoreItemProps): React.JSX.Element | null {
   const { selectedSize, setSelectedSize } = useSelectedSize();
-
+  const { nikeStoreData } = useFetchedData();
   const { increaseCartQuantity } = useShoppingCart();
   const [error, Seterror] = useState(false);
 

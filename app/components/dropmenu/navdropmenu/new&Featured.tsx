@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import nikeStoreData from "@/app/Data/nikeStoreData.json";
+
 import { useFetchedData } from "@/app/hooks/useContext/API/Api";
 export default function NewFeatured(props: any) {
   const { nikeStoreData } = useFetchedData();

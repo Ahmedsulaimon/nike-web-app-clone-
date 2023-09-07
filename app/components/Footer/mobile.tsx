@@ -6,9 +6,10 @@ import { IoLocationSharp } from "react-icons/io5";
 import { AiOutlineCopyrightCircle } from "react-icons/ai";
 import HoverDropupMenu from "./dropup";
 import AccordionContent from "../dropmenu/accordion/accordionContent";
-import nikeStoreData from "@/app/Data/nikeStoreData.json";
+import { useFetchedData } from "@/app/hooks/useContext/API/Api";
 
 export default function Mobile() {
+  const { nikeStoreData } = useFetchedData();
   return (
     //footer styling for mobile device
     <div>

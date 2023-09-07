@@ -9,8 +9,9 @@ export interface DataTypes {
     img: string;
     title: string;
     desc: string;
-    price: string;
+    price: number;
     link: string;
+    colour: string;
   }[];
   Icons: {
     id: number;
